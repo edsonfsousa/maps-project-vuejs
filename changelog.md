@@ -1,32 +1,17 @@
-{{#each releases}}
-# {{title}}
-[{{isoDate}}]
+# OpenMap
+### release: 0.0.0
+### 28/11/2021
+#
+## Novas funcionalidades:
+```
+・ Adicionado personalização no icone e no nome do projeto
+・ Adicionado serviço JS ao projeto para servir na Vercel
+```
 
-{{! lista de commits marcados como feature, utilize feature: ou Feature: }}
-{{#commit-list 
-  commits 
-  heading='### Novas funcionalidades' 
-  message='(feature: )|(Feature: )' 
-  exclude='(fix: )|(Fix: )|(break: )|(Break: )'}}
-* {{subject}} ([`{{shorthash}}`]({{href}}))
-{{/commit-list}}
+## Correções:
+```
+```
 
-{{! Lista com correções, para adicionar commit aqui utilize fix: ou Fix: }}
-{{#commit-list 
-  commits 
-  heading='### Correções' 
-  message='(fix: )|(Fix: )' 
-  exclude='(break: )|(Break: )|(Feature: )|(feature: )'}}
-* {{subject}} ([`{{shorthash}}`]({{href}}))
-{{/commit-list}}
-
-{{! Lista com quebras de compatibilidade, utilize break: ou Break: }}
-{{#commit-list 
-  commits 
-  heading='### Quebras de compatibilidade' 
-  message='(break: )|(Break: )' 
-  exclude='(fix: )|(Fix: )|(Feature: )|(feature: )'}}
-* {{subject}} ([`{{shorthash}}`]({{href}}))
-{{/commit-list}}
-
-{{/each}}
+## Quebras de compatibilidade:
+```
+```
